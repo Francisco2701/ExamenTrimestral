@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Desarrollo de Interfaces Web</title>
+    <meta name="author" content="Francisco Gabriel Poiana Lazar">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    
+    
+    <div class="menu-lateral">
+        <img src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" alt="Logo Cesur">
+            <li><a href="">Listado entradas</a></li>
+            <li><a href="#" onclick="mostrarModal()">Nueva entrada</a></li>
+            <li><a href="">Clientes</a></li>
+            <li><a href="">Herramientas</a></li>
+            <li><a href="">Salir</a></li>
+    </div>
+
+    <div class="contenido-principal">
+        <h1>Listado de entradas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Modelo</th>
+                    <th>Cliente</th>
+                    <th>Fecha de entrada</th>
+                    <th>Fecha de salida</th>
+                    <th>Tarifa</th>
+                    <th>Coste total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ABC123</td>
+                    <td>Toyota Camry</td>
+                    <td>Juan Pérez</td>
+                    <td>2023-01-05</td>
+                    <td>2023-01-10</td>
+                    <td><button class="tarifa-btn">Estándar</button></td>
+                    <td>250€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr>
+                    <td>XYZ789</td>
+                    <td>Honda Civic</td>
+                    <td>Maria Rodríguez</td>
+                    <td>2023-02-12</td>
+                    <td>2023-02-18</td>
+                    <td><button class="tarifa-btn">Premium</button></td>
+                    <td>280€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr>
+                    <td>DEF456</td>
+                    <td>Ford Mustang</td>
+                    <td>Carlos Gómez</td>
+                    <td>2023-03-20</td>
+                    <td>2023-03-25</td>
+                    <td><button class="tarifa-btn">Oferta</button></td>
+                    <td>350€</td>
+                    <td>
+                        <button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GHI789</td>
+                    <td>Chevrolet Malibu</td>
+                    <td>Ana López</td>
+                    <td>2023-04-08</td>
+                    <td>2023-04-15</td>
+                    <td><button class="tarifa-btn">Estándar</button></td>
+                    <td>385€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr>
+                    <td>JKL012</td>
+                    <td>Nissan Altima</td>
+                    <td>Luis García</td>
+                    <td>2023-05-14</td>
+                    <td>2023-05-20</td>
+                    <td><button class="tarifa-btn">Premium</button></td>
+                    <td>270€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr>
+                    <td>MNO345</td>
+                    <td>Hyundai Sonata</td>
+                    <td>Sofía Martinez</td>
+                    <td>2023-06-02</td>
+                    <td>2023-06-08</td>
+                    <td><button class="tarifa-btn">Estándar</button></td>
+                    <td>288€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr> 
+                    <td>PQR678</td>
+                    <td>Kia Forte</td>
+                    <td>Pedro Sánchez</td>
+                    <td>2023-07-11</td>
+                    <td>2023-07-18</td>
+                    <td><button class="tarifa-btn">Oferta</button></td>
+                    <td>294€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr>
+                    <td>STU901</td>
+                    <td>Subaru Outback</td>
+                    <td>Marta Torres</td>
+                    <td>2023-08-19</td>
+                    <td>2023-08-25</td>
+                    <td><button class="tarifa-btn">Premium</button></td>
+                    <td>360€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr>   
+                    <td>VWX234</td>
+                    <td>Mercedes-Benz C-Class</td>
+                    <td>Ricardo Vargas</td>
+                    <td>2023-09-27</td>
+                    <td>2023-10-03</td>
+                    <td><button class="tarifa-btn" >Estándar</button></td>
+                    <td>480€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>
+                <tr>
+                    <td>YZA567</td>
+                    <td>Audi A4</td>
+                    <td>Isabel López</td>
+                    <td>2023-11-05</td>
+                    <td>2023-11-12</td>
+                    <td><button class="tarifa-btn">Oferta</button></td>
+                    <td>525€</td>
+                    <td><button class="acciones-btn" onclick="confirmarBorrar()">BORRAR</button></td>
+                </tr>           
+                
+            </tbody>
+        </table>
+
+    <p class="Creado">Creado por Francisco Gabriel Poiana Lazar</p>
+    
+    </div>
+        <script src="static/app.js"></script>
+        <div class="overlay" onclick="cerrarOverlay()">
+            <div class="confirmation-box" onclick="event.stopPropagation()">
+                <p>Borrar cache</p>
+                <p>¿Desea borrar la entrada seleccionada?</p>
+                <button onclick="borrarEntrada()" style="background-color: yellow;">Borrar</button>
+                <button onclick="mantenerEntrada()">Mantener</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" onclick="cerrarModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <h2>Insertar nuevo coche</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="matricula">Matrícula:</label>
+                        <input type="text" id="matricula" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="modelo">Modelo:</label>
+                        <input type="text" id="modelo" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="cliente">Cliente:</label>
+                        <input type="text" id="cliente" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="fechaEntrada">Fecha de entrada:</label>
+                        <input type="date" id="fechaEntrada" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="fechaSalida">Fecha de salida:</label>
+                        <input type="date" id="fechaSalida" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="tarifa">Tarifa:</label>
+                        <input type="text" id="tarifa" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="costeTotal">Coste total:</label>
+                        <input type="text" id="costeTotal" required>
+                    </div>
+    
+                    <div class="button-group">
+                        <button type="button" class="acciones-btn" onclick="insertarEntrada()">Insertar</button>
+                        <button type="button" class="acciones-btn" onclick="cancelarInsercion()">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</body>
+</html>
